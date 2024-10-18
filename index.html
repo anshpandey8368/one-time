@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Element</title>
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imgDiv {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    /* background-color:cadetblue;
+    color: black; */
+    position: relative;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+}
+.div1 , .div2 , .div3 , .div4 {
+    position: absolute;
+}
+
+.text {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;    
+    background-color:cadetblue;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 500;
+}   
+
+p {
+    text-align: center;
+}
+
+    </style>
+    <div class="container">
+        <div class="view">
+           
+            <div class="text">
+                <h1>Sticky Element</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+
+
+            <div class="div1">
+                <div class="imgDiv">
+                    <img src="https://images.unsplash.com/photo-1728936970677-c5a8cfcb9208?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzfHx8ZW58MHx8fHx8" alt="" class="image">
+                    <img src="https://plus.unsplash.com/premium_photo-1729017566977-c1670d157362?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNXx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://plus.unsplash.com/premium_photo-1729097011605-272826b292be?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                </div>
+            </div>
+
+
+            <div class="div2">
+                <div class="imgDiv">
+                    <img src="https://images.unsplash.com/photo-1728869691212-b1fa2222d541?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1728570084615-ffc96a28087e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1729116423046-5a458a2bf50d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzOHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                </div>
+            </div>
+
+
+            <div class="div3">
+                <div class="imgDiv">
+                    <img src="https://plus.unsplash.com/premium_photo-1728915906547-769b3fdf4f52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1727946301270-dbc7f3c0946c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1678133284350-9738bd594a45?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0N3x8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                </div>
+            </div>
+
+
+            <div class="div4">
+               <div class="imgDiv">
+                    <img src="https://plus.unsplash.com/premium_photo-1678935941863-6d5156ed6687?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1NXx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1728343070484-0874149980d9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+                    <img src="https://images.unsplash.com/photo-1728621181152-e72685d7bdc1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4M3x8fGVufDB8fHx8fA%3D%3D" alt="" class="image">
+               </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animation for .div1 (top left)
+        gsap.to('.div1 .image', {
+            x: (index) => [-500, -350, -200][index] + 'px',
+            y: (index) => [-15, -30, -45][index] + 'vh',
+            stagger: 0.2,
+            duration: 4,
+            scrollTrigger: {
+                trigger: '.view',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 1,
+                markers: true,
+            }
+        });
+
+        // Animation for .div2 (top right)
+        gsap.to('.div2 .image', {
+            x: (index) => [500, 350, 200][index] + 'px',
+            y: (index) => [-15, -30, -45][index] + 'vh',
+            stagger: 0.2,
+            duration: 4,
+            scrollTrigger: {
+                trigger: '.view',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 1,
+            }
+        });
+
+        // Animation for .div3 (bottom left)
+        gsap.to('.div3 .image', {
+            x: (index) => [-32, -22, -12][index] + 'vw',
+            y: (index) => [20, 35, 45][index] + 'vh',
+            stagger: 0.2,
+            duration: 4,
+            scrollTrigger: {
+                trigger: '.view',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 1,
+            }
+        });
+
+        // Animation for .div4 (bottom right)
+        gsap.to('.div4 .image', {
+            x: (index) => [32, 22, 12][index] + 'vw',
+            y: (index) => [20, 35, 45][index] + 'vh',
+            stagger: 0.2,
+            duration: 4,
+            scrollTrigger: {
+                trigger: '.view',
+                start: 'top top',
+                end: 'bottom bottom',
+                scrub: 1,
+            }
+        });
+    </script>
+</body>
+</html>
